@@ -5,8 +5,8 @@ function onEdit(e) {
 
   var range = e.range; // 編集されたセルの情報を取得
   var row = range.getRow(); // 入力された行
-  var column = range.getColumn(); // 入力された列
-  var value = range.getValue(); // 入力された値
+  var column = range.getColumn(); // 入力された列を取得
+  var value = range.getValue(); // 入力された値を取得
 
   // 日付なら "MM/DD" 形式に統一
   var formattedValue = (value instanceof Date) 
